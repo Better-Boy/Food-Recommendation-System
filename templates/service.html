@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <title>FoodApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .jumbotron {
+      background-color: #32CD32;
+      color: #fff;
+      padding: 100px 25px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color:   #32CD32;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default" id="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">ABOUT</a></li>
+        <li><a href="service">SERVICES</a></li>
+        <li><a href="/">PRICING</a></li>
+        <li><a href="/">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h3>Enter the Food Item</h3>
+    <form class="form-inline">
+      <div class="input-group">
+        <input type="email" class="form-control" size="50" placeholder="Food Item Name" required>
+        <div class="input-group-btn">
+          <button type="button" class="btn" style="background-color: #f4511e"> Get Recommendations</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="container text-center">
+      <h3>Recommeded food items for your choice are </h3>
+      <ul class="list-group" item-width="100">
+            <li class="list-group-item list-group-item-success">Banana</li>
+            <li class="list-group-item list-group-item-success">Apple</li>
+            <li class="list-group-item list-group-item-success">Cabbage</li>
+            <li class="list-group-item list-group-item-success">Capsicum</li>
+            <li class="list-group-item list-group-item-success">carrot</li>
+            <li class="list-group-item list-group-item-success">Raddish</li>
+            <li class="list-group-item list-group-item-danger">Chips</li>
+            <li class="list-group-item list-group-item-danger">Lays</li>
+            <li class="list-group-item list-group-item-danger">Kurkure</li>
+            <li class="list-group-item list-group-item-danger">Chocolate</li>
+            <li class="list-group-item list-group-item-danger">Coke</li>
+            <li class="list-group-item list-group-item-danger">Mirinda</li>
+            <li class="list-group-item list-group-item-danger">Pepsi</li>
+            <li class="list-group-item list-group-item-danger">Mountain Dew</li>
+    </ul>
+  </div>
+  <footer class="container-fluid text-center">
+        <a href="#navigation" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Copyrights&copy;2017</p>
+      </footer>
+</body>
+</html>
